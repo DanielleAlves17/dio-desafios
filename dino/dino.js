@@ -5,6 +5,14 @@ let isJumping = false;
 let isGameOver = false;
 let position = 0;
 
+var musik = document.getElementById("musik");
+var pulo = document.getElementById("jumper");
+
+//Música em loop
+musik.addEventListener("ended", function(){ musik.currentTime = 0; musik.play(); }, false);
+musik.play();
+
+
 function handleKeyUp(event) {
   if (event.keyCode === 32) {
     if (!isJumping) {
@@ -15,6 +23,7 @@ function handleKeyUp(event) {
 
 function jump() {
   isJumping = true;
+  pulo.play();
 
   let upInterval = setInterval(() => {
     if (position >= 150) {
