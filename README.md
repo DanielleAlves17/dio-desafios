@@ -7,3 +7,4 @@ Repositorio criado para realizar os desafios da DIO
 4. Genius.
 5. Jogo de space shooters.
 6. Dinorouge.
+7. Recriando a página inicial do Instagram.
